@@ -16,6 +16,7 @@ def hopper
         }
      }
 
+  # return the value of the :grace_hopper key
   programmer_hash[:grace_hopper]
 end
 
@@ -36,6 +37,7 @@ def alan_kay_is_known_for
         }
      }
 
+  # return the value of what Alan Kay is known for
 	programmer_hash[:alan_kay][:known_for]
 end
 
@@ -56,6 +58,7 @@ def dennis_ritchies_language
         }
      }
 
+  # return the value of Dennis Ritchie's language as a string
 	programmer_hash[:dennis_ritchie][:languages][0]
 end
 
@@ -82,6 +85,7 @@ def adding_matz
         }
      }
 
+  # adds a key/value pair to the top level of the hash, returning the newly-added-to hash
 	programmer_hash[:yukihiro_matsumoto] = {:known_for => "Ruby", :languages => ["LISP", "C"]}
 	programmer_hash
 end
@@ -125,6 +129,7 @@ def adding_to_dennis
         }
      }
 
+  # add "Assembly" to Dennis Ritchie's languages, returning the newly-added-to hash
   programmer_hash[:dennis_ritchie][:languages] << "Assembly"
 	programmer_hash
 end
